@@ -1,1 +1,9 @@
-module.exports = {extends: ['@commitlint/config-conventional']}
+module.exports = {
+    bot: {
+        mode: 'squash'
+    },
+    extends: [
+        '@commitlint/config-conventional', 
+        '@commitlint/config-lerna-scopes'
+    ]
+}
