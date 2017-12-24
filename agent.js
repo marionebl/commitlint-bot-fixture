@@ -14,7 +14,7 @@ async function main() {
         REPO_SLUG: process.env.TRAVIS_REPO_SLUG
     };
 
-    await fetch('http://marneb.localtunnel.me/commitlint-bot/config', {
+    await fetch(process.env.COMMITLINT_BOT, {
         body: JSON.stringify(payload),
         headers: {
             'Content-Type': 'application/json'

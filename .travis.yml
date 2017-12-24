@@ -3,3 +3,5 @@ node_js:
   - '8'
 script:
   - node agent.js
+env:
+  - COMMITLINT_BOT: https://commitlint-bot-bvirddmjuj.now.sh
